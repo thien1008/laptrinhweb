@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .header, .footer {
+            position: fixed;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .header {
+            top: 0;
+        }
+        .footer {
+            bottom: 0;
+        }
+        .login-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .login-container .checkbox {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .login-container .links {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .login-container .links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Home | Đăng nhập | Đăng ký
+    </div>
+
+    <div class="login-container">
+        <h2>Màn hình đăng nhập</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="checkbox">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember" style="display: inline;">Ghi nhớ đăng nhập</label>
+            </div>
+
+            <div class="links">
+                <a href="#">Quên mật khẩu</a>
+                <button type="submit">Đăng nhập</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        Lập trình web @ 01/2024
+    </div>
+</body>
+</html>
  

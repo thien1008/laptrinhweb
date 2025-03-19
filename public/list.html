@@ -1,1 +1,192 @@
- 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách user</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .header, .footer {
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+        }
+        .container {
+            margin: 60px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .actions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .actions a:hover {
+            text-decoration: underline;
+        }
+        .pagination {
+            text-align: center;
+        }
+        .pagination a, .pagination span {
+            margin: 0 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #007bff;
+            border: 1px solid #ccc;
+        }
+        .pagination span {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .pagination a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Home | Đăng xuất
+    </div>
+
+    <div class="container">
+        <h2>Danh sách user</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>UPVH</td>
+                    <td>ATJW@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>IFUK</td>
+                    <td>KULB@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>DZZQ</td>
+                    <td>ERNB@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>NJYY</td>
+                    <td>ROIF@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>YUMG</td>
+                    <td>KITN@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>WZSU</td>
+                    <td>CVTL@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>WXFQ</td>
+                    <td>MIUZ@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>XZOR</td>
+                    <td>YZLV@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>HGGO</td>
+                    <td>OYYX@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>PXZX</td>
+                    <td>YSML@gmail.com</td>
+                    <td class="actions">
+                        <a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <a href="#">Previous</a>
+            <span>1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Lập trình web @ 01/2024
+    </div>
+</body>
+</html>

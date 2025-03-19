@@ -1,1 +1,107 @@
- 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cập nhật</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .header, .footer {
+            position: fixed;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .header {
+            top: 0;
+        }
+        .footer {
+            bottom: 0;
+        }
+        .update-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+            width: 300px;
+            text-align: center;
+        }
+        .update-container h2 {
+            margin-bottom: 20px;
+        }
+        .update-container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        .update-container input[type="text"],
+        .update-container input[type="password"],
+        .update-container input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .update-container .links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .update-container .links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .update-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .update-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Home | Đăng nhập | Đăng ký
+    </div>
+
+    <div class="update-container">
+        <h2>Màn hình cập nhật</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" value="xxx" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" value="xxx" required>
+
+            <label for="confirm-password">Nhập lại mật khẩu</label>
+            <input type="password" id="confirm-password" name="confirm-password" value="xxx" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="xxx" required>
+
+            <div class="links">
+                <a href="#">Đã có tài khoản</a>
+                <button type="submit">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        Lập trình web @ 01/2024
+    </div>
+</body>
+</html>

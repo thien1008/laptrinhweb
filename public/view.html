@@ -1,1 +1,79 @@
- 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn hình chi tiết</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .header, .footer {
+            position: fixed;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .header {
+            top: 0;
+        }
+        .footer {
+            bottom: 0;
+        }
+        .detail-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+            width: 300px;
+            text-align: center;
+        }
+        .detail-container h2 {
+            margin-bottom: 30px;
+        }
+        .detail-container p {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .detail-container .button-container {
+            text-align: right; /* Căn nút sang bên phải */
+        }
+        .detail-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .detail-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Home | Đăng xuất
+    </div>
+
+    <div class="detail-container">
+        <h2>Màn hình chi tiết</h2>
+        <p><strong>Username:</strong> test1</p>
+        <p><strong>Email:</strong> test@gmail.com</p>
+        <div class="button-container">
+            <button>Chỉnh sửa</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Lập trình web @ 01/2024
+    </div>
+</body>
+</html>
