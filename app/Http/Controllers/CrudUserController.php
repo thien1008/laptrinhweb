@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Hash;
-use Session;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -22,17 +22,19 @@ class CrudUserController extends Controller
         return view('crud_user.login');
     }
 
+  
+
     /**
      * User submit form login
      */
     public function authUser(Request $request)
     {
         $request->validate([
-            'email' => 'required',
+            'name' => 'required',
             'password' => 'required',
         ]);
 
-        $credentials = $request->only('email', 'password');
+        $credentials = $request->only('name', 'password');
 
         if (Auth::attempt($credentials)) {
             return redirect()->intended('list')
@@ -58,14 +60,17 @@ class CrudUserController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6',
+            'password' => 'required|min:6|confirmed',
+        ], [
+            'password.confirmed' => 'Mật khẩu và mật khẩu xác nhận không khớp.',
         ]);
 
         $data = $request->all();
         $check = User::create([
-            'name' => $data['name'],
+            'name' => $data['name'],   
+            'password' => Hash::make($data['password']),
             'email' => $data['email'],
-            'password' => Hash::make($data['password'])
+            
         ]);
 
         return redirect("login");
@@ -129,6 +134,11 @@ class CrudUserController extends Controller
      */
     public function listUser()
     {
+//        $users = [
+//                'users' => User::all()
+//        ];
+//        return view('crud_user.ronaldo', $users);
+
         if(Auth::check()){
             $users = User::all();
             return view('crud_user.list', ['users' => $users]);
